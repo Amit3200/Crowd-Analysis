@@ -1,0 +1,244 @@
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+#feedback{
+	
+	 font-family: Quicksand;
+	padding-left:350px;
+	padding-right:350px;
+	padding-top:50px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+form > div {
+
+    position: relative;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+form > div > label {
+    opacity: 0.3;
+    font-weight: bold;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+form > div > input[type="text"],
+form > div > input[type="email"],
+form > div > input[id="message"],
+form > div > textarea[class="text"] {
+    width: 100%;
+    border: 0;
+    padding: 20px 20px 20px 50px;
+    background: #eee;
+	
+}
+form > div > input[type="text"]:focus,
+form > div > input[type="email"]:focus,
+form > div > input[id="message"]:focus,
+form > div > textarea[class="text"]:focus {
+    outline: 0;
+    background: white;
+}
+form > div > input[type="text"]:focus + label,
+form > div > input[type="email"]:focus + label,
+form > div > input[id="message"]:focus + label,
+form > div > textarea[class="text"]:focus + label {
+    opacity: 0;
+}
+form > div > input[type="text"]:valid,
+form > div > input[type="email"]:valid,
+form > div > input[id="message"]:valid,
+form > div > textarea[class="text"]:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+form > div .requirements {
+    padding: 0 30px 0 50px;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+}
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    background: #41D873;
+    color: white;
+    border: 0;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+#name1 {
+text-decoration:none;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background: #41D828;
+    color: white;
+    border: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+html, body {
+  
+  font-family: Quicksand;
+  color: #555f77;
+  -webkit-font-smoothing: antialiased;
+ 
+}
+*
+{
+    box-sizing: border-box;
+}
+ 
+/* TEST CODE BELOW */
+ 
+p {
+  line-height: 1.3125rem;
+}
+
+.comments {
+ font-family: Quicksand;
+  margin: 2.5rem auto 0;
+  max-width: 60.75rem;
+  padding: 0 1.25rem;
+}
+
+.comment-wrap {
+  margin-bottom: 1.25rem;
+  display: table;
+  width: 100%;
+  min-height: 5.3125rem;
+}
+
+.photo {
+  padding-top: 0.625rem;
+  display: table-cell;
+  width: 3.5rem;
+}
+.photo .avatar {
+  height: 2.25rem;
+  width: 2.25rem;
+  background-color: #0094ff;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+.comment-block {
+  padding: 1rem;
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: top;
+  border-radius: 0.1875rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.comment-text {
+  margin-bottom: 1.25rem;
+}
+
+.bottom-comment {
+  color: #acb4c2;
+  font-size: 0.875rem;
+}
+
+.comment-date {
+  float: left;
+}
+
+.comment-actions {
+  float: right;
+}
+.comment-actions li {
+  display: inline;
+  margin: -2px;
+  cursor: pointer;
+}
+.comment-actions li.complain {
+  padding-right: 0.75rem;
+  border-right: 1px solid #e1e5eb;
+}
+.comment-actions li.reply {
+  padding-left: 0.75rem;
+  padding-right: 0.125rem;
+}
+.comment-actions li:hover {
+  color: #0095ff;
+}
+body {
+   background-image: url("images/feedback4.jpg");
+     background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+form{
+height:auto;
+ position: absolute;
+    left: 100px;
+    top: 150px
+
+
+}
+#name{
+ font-family: Quicksand;
+}
+
+</style>
+</head>
+
+<body>
+<div>
+<div id="feedback">
+	<form method="post" action="/log" >
+
+		<div>
+			<input type="text" id="name" name="name" required="required" style="width:400px;" placeholder="Name" />
+			
+		</div>
+		<div>
+			<input type="text" id="name" name="title" required="required" style="width:400px;" placeholder=" Email" />
+		
+
+
+		</div>
+ 		<div>
+			<textarea class="text" rows="5" cols="10" id="name" name="message" style="width:400px;" required="required" placeholder="Feedback "></textarea>
+		
+		</div>
+        <a href="feedback.html" id="name1" value="Submit">Submit</a><br>
+		<a href="Home.php"  id="name1" >back to homepage</a>
+	</form>
+	
+	</div>
+	
+	 
+ 
+ 
+
+
+
+</div>
+	
+
+	
+	
+	
+	
+</body>
+ </html>
